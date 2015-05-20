@@ -1,4 +1,4 @@
-  window.signature = {
+  window.worldMap = {
   initialize: function(){
     $('.world').each(function(){
       console.log(this);
@@ -18,7 +18,6 @@
 
   animate: function(){
     $('.world').each(function(){
-      console.log(this);
       var delay = 5;
       var length = $(this).attr('data-length')
       var speed = $(this).attr('data-speed')
@@ -31,15 +30,15 @@
 }
         
 $(document).ready =
-  window.signature.initialize()
+  window.worldMap.initialize()
 
 $('button').on('click', function(){
-  window.signature.initialize();
+  window.worldMap.initialize();
   setTimeout(function(){
-    window.signature.animate()
+    window.worldMap.animate()
   }, 500);
 });
 
 $(window).load = function(){
-  window.signature.animate()
+  window.worldMap.animate()
 }
