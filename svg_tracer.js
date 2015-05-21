@@ -21,7 +21,7 @@ window.worldMap = {
       var speed = $(this).attr('data-speed')
       var delay = $(this).attr('data-delay')
       $(this).css('transition', 'stroke-dashoffset ' + speed + 'ms ' + delay + 'ms linear')
-             .attr('stroke-dashoffset', '1')
+             .attr('stroke-dashoffset', '0')
     });
      
   }
